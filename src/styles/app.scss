@@ -88,4 +88,10 @@ h6 {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @import "./about";
+@import "./myExp";
