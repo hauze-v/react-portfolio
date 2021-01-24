@@ -1,14 +1,14 @@
 const MyExpSection = () => {
   return (
     <section id="experience">
-      <div class="row column">
-        <div class="small-12">
-          <h2 class="text-center">My Experience</h2>
+      <div className="row column">
+        <div className="small-12">
+          <h2 className="text-center">My Experience</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="small-12 medium-4 columns text-center experience-topics">
-          <i class="fi-laptop"></i>
+      <div className="row">
+        <div className="small-12 medium-4 columns text-center experience-topics">
+          <i className="fi-laptop"></i>
           <h3>Front-end</h3>
           <ul>
             <li>HTML(5)</li>
@@ -19,8 +19,8 @@ const MyExpSection = () => {
             <li>Wordpress</li>
           </ul>
         </div>
-        <div class="small-12 medium-4 columns text-center experience-topics">
-          <i class="fi-database"></i>
+        <div className="small-12 medium-4 columns text-center experience-topics">
+          <i className="fi-database"></i>
           <h3>Back-end</h3>
           <ul>
             <li>Node.js</li>
@@ -31,8 +31,8 @@ const MyExpSection = () => {
             <li>MySQL DB</li>
           </ul>
         </div>
-        <div class="small-12 medium-4 columns text-center experience-topics">
-          <i class="fi-star"></i>
+        <div className="small-12 medium-4 columns text-center experience-topics">
+          <i className="fi-star"></i>
           <h3>Tools</h3>
           <ul>
             <li>Vim</li>
