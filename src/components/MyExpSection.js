@@ -1,3 +1,5 @@
+import { FaLaptop, FaDatabase, FaStar } from "react-icons/fa";
+
 const MyExpSection = () => {
   return (
     <section id="experience">
@@ -8,7 +10,7 @@ const MyExpSection = () => {
       </div>
       <div className="row">
         <div className="small-12 medium-4 columns text-center experience-topics">
-          <i className="fi-laptop"></i>
+          <FaLaptop color="rgb(255, 138, 89)" fontSize="4em" />
           <h3>Front-end</h3>
           <ul>
             <li>HTML(5)</li>
@@ -20,7 +22,7 @@ const MyExpSection = () => {
           </ul>
         </div>
         <div className="small-12 medium-4 columns text-center experience-topics">
-          <i className="fi-database"></i>
+          <FaDatabase color="rgb(255, 138, 89)" fontSize="4em" />
           <h3>Back-end</h3>
           <ul>
             <li>Node.js</li>
@@ -32,7 +34,7 @@ const MyExpSection = () => {
           </ul>
         </div>
         <div className="small-12 medium-4 columns text-center experience-topics">
-          <i className="fi-star"></i>
+          <FaStar color="rgb(255, 138, 89)" fontSize="4em" />
           <h3>Tools</h3>
           <ul>
             <li>Vim</li>
