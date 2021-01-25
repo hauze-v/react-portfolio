@@ -1,7 +1,17 @@
 // Images
 import portrait from "../img/Adam.jpg";
+// Typist
+import Typist from "react-typist";
+import { useState } from "react";
 
 const AboutSection = () => {
+  // State
+  const [doneTyping, setDoneTyping] = useState(false);
+
+  const highlight = () => {
+    setDoneTyping(true);
+  };
+
   return (
     <section id="about">
       <div className="row">
@@ -9,7 +19,22 @@ const AboutSection = () => {
           <img className="img-circle" src={portrait} alt="headshot"></img>
           <div className="details">
             <h2>
-              Hi, I'm Adam and I...<br></br> <span id="writing-text"></span>
+              Hi, I'm Adam and I...<br></br>
+              <Typist
+                avgTypingDelay={40}
+                className={`writing-text`}
+                onTypingDone={highlight}
+              >
+                <span id="writing-text">am a front end web developer.</span>
+                <Typist.Backspace count={29} delay={500} />
+                <span>love learning new things.</span>
+                <Typist.Backspace count={25} delay={500} />
+                <span>share knowledge each week on my blog.</span>
+                <Typist.Backspace count={37} delay={500} />
+                <span className={`${doneTyping ? "highlight" : ""}`}>
+                  am passionate about code.
+                </span>
+              </Typist>
             </h2>
           </div>
         </div>
