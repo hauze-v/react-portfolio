@@ -1,4 +1,5 @@
-import { FaLaptop, FaDatabase, FaStar } from "react-icons/fa";
+import { FaLaptop, FaStar } from "react-icons/fa";
+import { AiOutlineDatabase } from "react-icons/ai";
 
 const MyExpSection = () => {
   return (
@@ -24,7 +25,7 @@ const MyExpSection = () => {
           </ul>
         </div>
         <div className="experience-topics">
-          <FaDatabase
+          <AiOutlineDatabase
             color="rgb(255, 138, 89)"
             fontSize="4em"
             className="icons"
