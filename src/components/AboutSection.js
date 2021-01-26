@@ -6,10 +6,10 @@ import { useState } from "react";
 
 const AboutSection = () => {
   // State
-  const [doneTyping, setDoneTyping] = useState(false);
+  // const [doneTyping, setDoneTyping] = useState(false);
 
   const highlight = () => {
-    setDoneTyping(true);
+    document.getElementById("last-line").classList.add("highlight");
   };
 
   return (
@@ -31,9 +31,7 @@ const AboutSection = () => {
                 <Typist.Backspace count={25} delay={500} />
                 <span>share knowledge each week on my blog.</span>
                 <Typist.Backspace count={37} delay={500} />
-                <span className={`${doneTyping ? "highlight" : ""}`}>
-                  am passionate about code.
-                </span>
+                <span id="last-line">am passionate about code.</span>
               </Typist>
             </h2>
           </div>
