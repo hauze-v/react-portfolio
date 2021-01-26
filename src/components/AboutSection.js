@@ -2,12 +2,8 @@
 import portrait from "../img/Adam.jpg";
 // Typist
 import Typist from "react-typist";
-import { useState } from "react";
 
 const AboutSection = () => {
-  // State
-  // const [doneTyping, setDoneTyping] = useState(false);
-
   const highlight = () => {
     document.getElementById("last-line").classList.add("highlight");
   };
@@ -25,7 +21,7 @@ const AboutSection = () => {
                 className={`writing-text`}
                 onTypingDone={highlight}
               >
-                <span id="writing-text">am a front end web developer.</span>
+                <span>am a front end web developer.</span>
                 <Typist.Backspace count={29} delay={500} />
                 <span>love learning new things.</span>
                 <Typist.Backspace count={25} delay={500} />
