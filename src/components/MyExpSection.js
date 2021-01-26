@@ -3,14 +3,16 @@ import { FaLaptop, FaDatabase, FaStar } from "react-icons/fa";
 const MyExpSection = () => {
   return (
     <section id="experience">
-      <div className="row column">
-        <div className="small-12">
-          <h2 className="text-center">My Experience</h2>
-        </div>
+      <div className="exp-title">
+        <h2>My Experience</h2>
       </div>
-      <div className="row">
-        <div className="small-12 medium-4 columns text-center experience-topics">
-          <FaLaptop color="rgb(255, 138, 89)" fontSize="4em" />
+      <div className="exp-total">
+        <div className="experience-topics">
+          <FaLaptop
+            color="rgb(255, 138, 89)"
+            fontSize="4em"
+            className="icons"
+          />
           <h3>Front-end</h3>
           <ul>
             <li>HTML(5)</li>
@@ -21,8 +23,12 @@ const MyExpSection = () => {
             <li>Wordpress</li>
           </ul>
         </div>
-        <div className="small-12 medium-4 columns text-center experience-topics">
-          <FaDatabase color="rgb(255, 138, 89)" fontSize="4em" />
+        <div className="experience-topics">
+          <FaDatabase
+            color="rgb(255, 138, 89)"
+            fontSize="4em"
+            className="icons"
+          />
           <h3>Back-end</h3>
           <ul>
             <li>Node.js</li>
@@ -33,8 +39,8 @@ const MyExpSection = () => {
             <li>MySQL DB</li>
           </ul>
         </div>
-        <div className="small-12 medium-4 columns text-center experience-topics">
-          <FaStar color="rgb(255, 138, 89)" fontSize="4em" />
+        <div className="experience-topics">
+          <FaStar color="rgb(255, 138, 89)" fontSize="4em" className="icons" />
           <h3>Tools</h3>
           <ul>
             <li>Vim</li>

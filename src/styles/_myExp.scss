@@ -26,7 +26,13 @@
 .experience-topics p {
   color: #acaeb2;
   font-family: "Maven pro", sans-serif;
-  /*font-weight: 500;*/
+}
+.experience-topics h3 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.experience-topics ul {
+  line-height: 1.5;
 }
 
 .experience-topics ul li {
@@ -34,4 +40,22 @@
   color: #bbd2ff;
   font-family: "Maven pro", sans-serif;
   font-weight: 500;
+}
+.exp-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+.exp-total {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 40vh;
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 60%;
+}
+.icons {
+  margin-bottom: 1.5rem;
 }
