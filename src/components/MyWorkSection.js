@@ -21,14 +21,14 @@ const MyWorkSection = ({ projects }) => {
 };
 
 const WorkSection = styled(motion.div)`
-  border: 2px solid blue;
-  padding: 0rem 5rem;
+  padding: 2rem 5rem;
 `;
 
 const Header = styled(motion.div)`
   h2 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.75rem;
   }
   p {
     text-align: center;
@@ -39,7 +39,7 @@ const Header = styled(motion.div)`
 const Projects = styled(motion.div)`
   min-height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   h2 {
