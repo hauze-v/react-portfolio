@@ -17,7 +17,7 @@ const MyWorkSection = ({ projects }) => {
         <h2>My Work</h2>
         <p>Here are some of my recent projects</p>
       </Header>
-      {/* <ProjectDetail projectDetail={projectDetail} /> */}
+      <ProjectDetail projectDetail={projectDetail} />
       <Projects>
         {projects.map((project) => (
           <Project
