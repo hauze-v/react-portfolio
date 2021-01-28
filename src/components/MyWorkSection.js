@@ -9,7 +9,7 @@ const MyWorkSection = ({ projects }) => {
     <WorkSection>
       <Header>
         <h2>My Work</h2>
-        <p>Here are a few of my recent projects</p>
+        <p>Here are some of my recent projects</p>
       </Header>
       <Projects>
         {projects.map((project) => (
@@ -21,18 +21,24 @@ const MyWorkSection = ({ projects }) => {
 };
 
 const WorkSection = styled(motion.div)`
-  padding: 2rem 5rem;
+  padding: 6em 4em 3em;
+  background-color: #fff;
 `;
 
 const Header = styled(motion.div)`
   h2 {
     text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #ff6945;
   }
   p {
     text-align: center;
     margin-bottom: 3rem;
+    color: #767779;
+    font-size: 1.4em;
+    margin-bottom: 4em;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   }
 `;
 

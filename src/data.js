@@ -31,19 +31,11 @@ function getProjects() {
     },
     {
       id: uuidv4(),
-      name: "Vanilla Quiz App",
+      name: "React Gaming Website",
       caseStudy:
-        "Object oriented vanilla JavaScript quiz app built using the revealing module pattern. This project allowed me to apply my OOP knowledge through constructor functions and object prototypes.",
-      bgImage: quizMain,
-      screenshots: [quizSS01, quizSS02],
-    },
-    {
-      id: uuidv4(),
-      name: "Final Fantasy Ipsum Generator",
-      caseStudy:
-        "Ever since I first used a custom-built ipsum generator like bacon ipsum back in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an ipsum generator for my favorite video game series, I decided this was the perfect project to practice my JavaScript skills with.",
-      bgImage: ipsumMain,
-      screenshots: [ipsumSS01, ipsumSS02],
+        "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
+      bgImage: igniteMain,
+      screenshots: [igniteSS01, igniteSS02],
     },
     {
       id: uuidv4(),
@@ -55,11 +47,19 @@ function getProjects() {
     },
     {
       id: uuidv4(),
-      name: "React Gaming Website",
+      name: "Final Fantasy Ipsum Generator",
       caseStudy:
-        "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
-      bgImage: igniteMain,
-      screenshots: [igniteSS01, igniteSS02],
+        "Ever since I first used a custom-built ipsum generator like bacon ipsum back in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an ipsum generator for my favorite video game series, I decided this was the perfect project to practice my JavaScript skills with.",
+      bgImage: ipsumMain,
+      screenshots: [ipsumSS01, ipsumSS02],
+    },
+    {
+      id: uuidv4(),
+      name: "Vanilla Quiz App",
+      caseStudy:
+        "Object oriented vanilla JavaScript quiz app built using the revealing module pattern. This project allowed me to apply my OOP knowledge through constructor functions and object prototypes.",
+      bgImage: quizMain,
+      screenshots: [quizSS01, quizSS02],
     },
     {
       id: uuidv4(),

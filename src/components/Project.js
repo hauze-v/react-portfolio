@@ -20,6 +20,9 @@ const StyledProject = styled(motion.div)`
     width: 100%;
     display: block;
   }
+  h2 {
+    color: #738182;
+  }
   overflow: hidden;
 `;
 
