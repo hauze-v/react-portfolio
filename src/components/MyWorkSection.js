@@ -1,19 +1,33 @@
+// React
+import { useState } from "react";
 // Import Componenets
 import Project from "../components/Project";
+import ProjectDetail from "../components/ProjectDetail";
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const MyWorkSection = ({ projects }) => {
+  // State
+  const [projectDetail, setProjectDetail] = useState("");
+
   return (
     <WorkSection>
       <Header>
         <h2>My Work</h2>
         <p>Here are some of my recent projects</p>
       </Header>
+      <ProjectDetail projectDetail={projectDetail} />
       <Projects>
         {projects.map((project) => (
-          <Project project={project} key={project.id} />
+          <>
+            <Project
+              project={project}
+              projectDetail={projectDetail}
+              setProjectDetail={setProjectDetail}
+              key={project.id}
+            />
+          </>
         ))}
       </Projects>
     </WorkSection>

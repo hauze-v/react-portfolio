@@ -6,6 +6,12 @@
 body,
 html {
   background-color: #e3e3e3;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+  }
 }
 
 h1,

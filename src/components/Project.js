@@ -1,10 +1,18 @@
+// React
+import { useState } from "react";
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+// Components
+import ProjectDetail from "../components/ProjectDetail";
 
-const Project = ({ project }) => {
+const Project = ({ project, projectDetail, setProjectDetail }) => {
+  const loadDetailHandler = () => {
+    setProjectDetail(project);
+  };
+
   return (
-    <StyledProject>
+    <StyledProject onClick={loadDetailHandler}>
       <h2>{project.name}</h2>
       <img src={project.bgImage} alt="Main screenshot for project work." />
     </StyledProject>
