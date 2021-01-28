@@ -55,6 +55,7 @@ const ProjectDetails = styled(motion.div)`
   color: #767779;
   img {
     width: 100%;
+    border-radius: 0.5rem;
   }
 `;
 
