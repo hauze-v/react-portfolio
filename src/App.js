@@ -10,7 +10,7 @@ import data from "./data";
 
 function App() {
   // State
-  const [projects, setProjects] = useState(data());
+  const [projects] = useState(data());
 
   return (
     <div className="App">
