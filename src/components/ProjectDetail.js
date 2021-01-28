@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const ProjectDetail = ({ projectDetail }) => {
   return (
-    <div className="card-shadow">
-      <div className="project-detail">
+    <CardShadow>
+      <ProjectDetails>
         <div className="name">
           <h3>{projectDetail.name}</h3>
         </div>
@@ -20,9 +20,33 @@ const ProjectDetail = ({ projectDetail }) => {
             <img src={screenshot} alt="Screenshot of project"></img>
           ))}
         </div>
-      </div>
-    </div>
+      </ProjectDetails>
+    </CardShadow>
   );
 };
+
+const CardShadow = styled(motion.div)`
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+
+const ProjectDetails = styled(motion.div)`
+  width: 80%;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  padding: 2rem 20rem;
+  background-color: #e3e3e3;
+  position: absolute;
+  left: 10%;
+  color: #767779;
+  img {
+    width: 100%;
+  }
+`;
 
 export default ProjectDetail;

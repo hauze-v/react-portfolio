@@ -20,14 +20,11 @@ const MyWorkSection = ({ projects }) => {
       <ProjectDetail projectDetail={projectDetail} />
       <Projects>
         {projects.map((project) => (
-          <>
-            <Project
-              project={project}
-              projectDetail={projectDetail}
-              setProjectDetail={setProjectDetail}
-              key={project.id}
-            />
-          </>
+          <Project
+            project={project}
+            setProjectDetail={setProjectDetail}
+            key={project.id}
+          />
         ))}
       </Projects>
     </WorkSection>

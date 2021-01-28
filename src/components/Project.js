@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 // Components
 import ProjectDetail from "../components/ProjectDetail";
 
-const Project = ({ project, projectDetail, setProjectDetail }) => {
+const Project = ({ project, setProjectDetail }) => {
   const loadDetailHandler = () => {
     setProjectDetail(project);
   };
