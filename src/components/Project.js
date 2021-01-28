@@ -17,8 +17,7 @@ const StyledProject = styled(motion.div)`
   text-align: center;
   border-radius: 1rem;
   img {
-    height: 40vh;
-    object-fit: cover;
+    width: 100%;
     display: block;
   }
   overflow: hidden;

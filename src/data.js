@@ -6,13 +6,13 @@ import igniteSS02 from "./img/ignite-ss02.jpg";
 import musicMain from "./img/music-main.png";
 import musicSS01 from "./img/music-ss01.png";
 import musicSS02 from "./img/music-ss02.png";
-import quizMain from "./img/quiz-main.png";
+import quizMain from "./img/quiz-main (2).png";
 import quizSS01 from "./img/quiz-ss01.png";
 import quizSS02 from "./img/quiz-ss02.png";
 import ipsumMain from "./img/ipsum-main.jpg";
 import ipsumSS01 from "./img/ipsum-ss01.jpg";
 import ipsumSS02 from "./img/ipsum-ss02.jpg";
-import hangmanMain from "./img/hangman-main.png";
+import hangmanMain from "./img/hangman-main (2).png";
 import hangmanSS01 from "./img/hamgna-ss01.png";
 import hangmanSS02 from "./img/hangman-ss02.png";
 import captureMain from "./img/capture-main.png";
@@ -31,7 +31,7 @@ function getProjects() {
     },
     {
       id: uuidv4(),
-      name: "Quiz App",
+      name: "Vanilla Quiz App",
       caseStudy:
         "Object oriented vanilla JavaScript quiz app built using the revealing module pattern. This project allowed me to apply my OOP knowledge through constructor functions and object prototypes.",
       bgImage: quizMain,
@@ -63,7 +63,7 @@ function getProjects() {
     },
     {
       id: uuidv4(),
-      name: "Hangman Game",
+      name: "Vanilla Hangman Game",
       caseStudy:
         "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
       bgImage: hangmanMain,
