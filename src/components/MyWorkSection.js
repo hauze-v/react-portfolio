@@ -25,12 +25,7 @@ const MyWorkSection = ({ projects }) => {
         <h2>My Work</h2>
         <p>Here are some of my recent projects</p>
       </Header>
-      {/* <AnimateSharedLayout type="crossfade"> */}
-      <AnimatePresence>
-        {pathID && (
-          <ProjectDetail projectDetail={projectDetail} pathID={pathID} />
-        )}
-      </AnimatePresence>
+      {pathID && <ProjectDetail projectDetail={projectDetail} />}
       <Projects>
         {projects.map((project) => (
           <Project

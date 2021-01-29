@@ -25,20 +25,16 @@ const ProjectDetail = ({ projectDetail, pathID }) => {
   return (
     <CardShadow className="shadow" onClick={exitDetailHandler}>
       <ProjectDetails
-        layoutId={pathID}
         variants={pageAnimation}
         initial="hidden"
         animate="show"
         exit="exit"
       >
         <Header>
-          <motion.h2 layoutId={`name ${pathID}`}>
-            {projectDetail.name}
-          </motion.h2>
+          <motion.h2>{projectDetail.name}</motion.h2>
         </Header>
         <BGImage>
           <motion.img
-            layoutId={`image ${pathID}`}
             src={projectDetail.bgImage}
             alt="Main screen of project"
           />

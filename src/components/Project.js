@@ -13,7 +13,7 @@ const Project = ({ project, setProjectDetail }) => {
 
   // Add a layoutId to component for AnimateSharedLayout animations
   return (
-    <StyledProject layoutId={project.id} onClick={loadDetailHandler}>
+    <StyledProject onClick={loadDetailHandler}>
       <Link to={`/project/${project.id}`}>
         <motion.h2 layoutId={`name ${project.id}`}>{project.name}</motion.h2>
         <motion.img
