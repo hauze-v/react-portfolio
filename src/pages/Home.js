@@ -3,6 +3,8 @@ import { useState } from "react";
 import AboutSection from "../components/AboutSection";
 import MyExpSection from "../components/MyExpSection";
 import MyWorkSection from "../components/MyWorkSection";
+import TeachingSection from "../components/TeachingSection";
+import HireMeSection from "../components/HireMeSection";
 // Import project data
 import data from "../data";
 // Router
@@ -18,6 +20,8 @@ const Home = () => {
       <AboutSection />
       <MyExpSection />
       <MyWorkSection projects={projects} />
+      <TeachingSection />
+      <HireMeSection />
     </div>
   );
 };
