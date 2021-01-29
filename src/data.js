@@ -28,6 +28,8 @@ function getProjects() {
         "This project marks my introduction to React.js. In order to build what you see here I had to learn JSX, how to handle state, and how to pass props. After spending a lot of time with the fundamentals of vanilla JS, I appreciate the speed and ease at which React.js can render things on the screen. Writing Sass was also a fun challenge.",
       bgImage: musicMain,
       screenshots: [musicSS01, musicSS02],
+      webLink: "http://35.222.64.101/",
+      githubLink: "https://github.com/hauze-v/react-music-player",
     },
     {
       id: uuidv4(),
@@ -36,6 +38,8 @@ function getProjects() {
         "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
       bgImage: igniteMain,
       screenshots: [igniteSS01, igniteSS02],
+      webLink: "http://35.239.133.109",
+      githubLink: "https://github.com/hauze-v/ignite",
     },
     {
       id: uuidv4(),
@@ -44,6 +48,8 @@ function getProjects() {
         "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
       bgImage: captureMain,
       screenshots: [captureSS01, captureSS02],
+      webLink: "http://34.70.229.27/react-capture-portfolio",
+      githubLink: "https://github.com/hauze-v/react-capture-portfolio",
     },
     {
       id: uuidv4(),
@@ -52,7 +58,10 @@ function getProjects() {
         "Ever since I first used a custom-built ipsum generator like bacon ipsum back in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an ipsum generator for my favorite video game series, I decided this was the perfect project to practice my JavaScript skills with.",
       bgImage: ipsumMain,
       screenshots: [ipsumSS01, ipsumSS02],
+      webLink: "https://finalfantasyipsum.com/",
+      githubLink: "https://github.com/hauze-v/final-fantasy-ipsum",
     },
+
     {
       id: uuidv4(),
       name: "Vanilla Quiz App",
@@ -60,6 +69,8 @@ function getProjects() {
         "Object oriented vanilla JavaScript quiz app built using the revealing module pattern. This project allowed me to apply my OOP knowledge through constructor functions and object prototypes.",
       bgImage: quizMain,
       screenshots: [quizSS01, quizSS02],
+      webLink: "https://hauze-v.github.io/oop-quiz-app/",
+      githubLink: "https://github.com/hauze-v/oop-quiz-app",
     },
     {
       id: uuidv4(),
@@ -68,6 +79,8 @@ function getProjects() {
         "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
       bgImage: hangmanMain,
       screenshots: [hangmanSS01, hangmanSS02],
+      webLink: "https://hauze-v.github.io/hangman-game/",
+      githubLink: "https://github.com/hauze-v/hangman-game",
     },
   ];
 }

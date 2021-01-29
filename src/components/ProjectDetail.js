@@ -45,13 +45,13 @@ const ProjectDetail = ({ projectDetail, pathID }) => {
         <Buttons>
           <a
             className="my-button visit-site-button"
-            href="https://hauze-v.github.io/react-music-player/"
+            href={projectDetail.webLink}
           >
             Visit Website
           </a>
           <a
             className="my-button visit-site-button"
-            href="https://github.com/hauze-v/react-music-player"
+            href={projectDetail.githubLink}
           >
             See the code
           </a>

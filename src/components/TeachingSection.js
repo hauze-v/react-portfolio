@@ -7,10 +7,10 @@ const TeachingSection = () => {
   const words = [
     {
       text: "VS Code",
-      value: 75,
+      value: 45,
     },
     {
-      text: "Terminal for beginners",
+      text: "Terminal",
       value: 50,
     },
     {
@@ -39,7 +39,7 @@ const TeachingSection = () => {
     },
     {
       text: "GitHub",
-      value: 41,
+      value: 70,
     },
     {
       text: "CSS box model",
@@ -59,7 +59,7 @@ const TeachingSection = () => {
     },
     {
       text: "Library vs. Framework",
-      value: 28,
+      value: 55,
     },
     {
       text: "Iteration & Loops",

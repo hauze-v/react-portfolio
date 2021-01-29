@@ -20,7 +20,7 @@ const MyExpSection = () => {
             <li>CSS(3)</li>
             <li>JavaScript</li>
             <li>React.js</li>
-            <li>JS Design Patterns (Revealing Module)</li>
+            <li>Revealing Module Pattern</li>
             <li>Wordpress</li>
             <li>Joomla</li>
             <li>Shopify</li>
@@ -39,7 +39,7 @@ const MyExpSection = () => {
             <li>Express</li>
             <li>SQL</li>
             <li>API Integration</li>
-            <li>Security implementations</li>
+            <li>Security Headers</li>
             <li>Docker</li>
             <li>Kubernetes</li>
             <li>Google Cloud Platform</li>
