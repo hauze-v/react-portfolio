@@ -6,20 +6,34 @@ const ProjectDetail = ({ projectDetail }) => {
   return (
     <CardShadow>
       <ProjectDetails>
-        <div className="name">
+        <Header>
           <h3>{projectDetail.name}</h3>
-        </div>
-        <div className="media">
+        </Header>
+        <BGImage>
           <img src={projectDetail.bgImage} alt="Main screen of project" />
-        </div>
-        <div className="case-study">
+        </BGImage>
+        <CaseStudy>
           <p>{projectDetail.caseStudy}</p>
-        </div>
-        <div className="screenshotGallery">
+        </CaseStudy>
+        <Buttons>
+          <a
+            className="my-button visit-site-button"
+            href="https://hauze-v.github.io/react-music-player/"
+          >
+            Visit Website
+          </a>
+          <a
+            className="my-button visit-site-button"
+            href="https://github.com/hauze-v/react-music-player"
+          >
+            See the code
+          </a>
+        </Buttons>
+        <ScreenshotGallery>
           {projectDetail.screenshots.map((screenshot) => (
             <img src={screenshot} alt="Screenshot of project"></img>
           ))}
-        </div>
+        </ScreenshotGallery>
       </ProjectDetails>
     </CardShadow>
   );
@@ -48,7 +62,7 @@ const ProjectDetails = styled(motion.div)`
   width: 80%;
   margin: 1rem 0;
   border-radius: 1rem;
-  padding: 2rem 20rem;
+  padding: 2rem 8rem;
   background-color: #e3e3e3;
   position: absolute;
   left: 10%;
@@ -56,6 +70,58 @@ const ProjectDetails = styled(motion.div)`
   img {
     width: 100%;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+`;
+
+const Header = styled(motion.div)`
+  h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #738182;
+  }
+`;
+
+const BGImage = styled(motion.div)`
+  margin: 1rem 0;
+`;
+
+const CaseStudy = styled(motion.div)`
+  p {
+    color: #738182;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+`;
+
+const Buttons = styled(motion.div)`
+  text-align: center;
+  margin: 3rem;
+  a,
+  a:link,
+  a:active {
+    color: rgba(255, 103, 68, 0.91);
+    border: 2px solid rgba(255, 103, 68, 0.91) !important;
+    background-color: #e3e3e3;
+  }
+  a:hover,
+  a:focus {
+    background-color: rgba(255, 103, 68, 0.91) !important;
+    color: #fff;
+  }
+  .visit-site-button {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+`;
+
+const ScreenshotGallery = styled(motion.div)`
+  img {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 `;
 
