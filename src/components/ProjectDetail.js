@@ -97,6 +97,7 @@ const Header = styled(motion.div)`
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #738182;
+    letter-spacing: 1px;
   }
 `;
 
