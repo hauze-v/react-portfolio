@@ -5,7 +5,7 @@ import Project from "../components/Project";
 import ProjectDetail from "../components/ProjectDetail";
 // Stying and Animation
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 const MyWorkSection = ({ projects }) => {
@@ -17,13 +17,20 @@ const MyWorkSection = ({ projects }) => {
   // State'
   const [projectDetail, setProjectDetail] = useState({ screenshots: [] });
 
+  /* Wrap the toggled component (ProjectDetail) in AnimatePresence and both components you want to animate in AnimateSharedLayout
+    Then give each component (Project & ProjectDetail) an identical id */
   return (
     <WorkSection>
       <Header>
         <h2>My Work</h2>
         <p>Here are some of my recent projects</p>
       </Header>
-      {pathID && <ProjectDetail projectDetail={projectDetail} />}
+      {/* <AnimateSharedLayout type="crossfade"> */}
+      <AnimatePresence>
+        {pathID && (
+          <ProjectDetail projectDetail={projectDetail} pathID={pathID} />
+        )}
+      </AnimatePresence>
       <Projects>
         {projects.map((project) => (
           <Project
@@ -33,6 +40,7 @@ const MyWorkSection = ({ projects }) => {
           />
         ))}
       </Projects>
+      {/* </AnimateSharedLayout> */}
     </WorkSection>
   );
 };

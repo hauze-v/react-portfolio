@@ -1,10 +1,11 @@
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { pageAnimation, fadeAnim } from "../animation";
 // Routing
 import { useHistory } from "react-router-dom";
 
-const ProjectDetail = ({ projectDetail }) => {
+const ProjectDetail = ({ projectDetail, pathID }) => {
   // Grab history
   const history = useHistory();
 
@@ -20,14 +21,27 @@ const ProjectDetail = ({ projectDetail }) => {
     }
   };
 
+  // Add a layoutId to component for AnimateSharedLayout animations
   return (
     <CardShadow className="shadow" onClick={exitDetailHandler}>
-      <ProjectDetails>
+      <ProjectDetails
+        layoutId={pathID}
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
         <Header>
-          <h3>{projectDetail.name}</h3>
+          <motion.h2 layoutId={`name ${pathID}`}>
+            {projectDetail.name}
+          </motion.h2>
         </Header>
         <BGImage>
-          <img src={projectDetail.bgImage} alt="Main screen of project" />
+          <motion.img
+            layoutId={`image ${pathID}`}
+            src={projectDetail.bgImage}
+            alt="Main screen of project"
+          />
         </BGImage>
         <CaseStudy>
           <p>{projectDetail.caseStudy}</p>
@@ -57,6 +71,7 @@ const ProjectDetail = ({ projectDetail }) => {
 };
 
 const CardShadow = styled(motion.div)`
+  z-index: 999;
   width: 100%;
   min-height: 100vh;
   overflow-y: scroll;
@@ -92,7 +107,7 @@ const ProjectDetails = styled(motion.div)`
 `;
 
 const Header = styled(motion.div)`
-  h3 {
+  h2 {
     padding: 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -113,6 +128,7 @@ const CaseStudy = styled(motion.div)`
     font-size: 1.25rem;
     margin: 2rem 0;
     line-height: 1.5;
+  }
 `;
 
 const Buttons = styled(motion.div)`

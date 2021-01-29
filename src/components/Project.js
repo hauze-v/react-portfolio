@@ -11,11 +11,16 @@ const Project = ({ project, setProjectDetail }) => {
     setProjectDetail(project);
   };
 
+  // Add a layoutId to component for AnimateSharedLayout animations
   return (
-    <StyledProject onClick={loadDetailHandler}>
+    <StyledProject layoutId={project.id} onClick={loadDetailHandler}>
       <Link to={`/project/${project.id}`}>
-        <h2>{project.name}</h2>
-        <img src={project.bgImage} alt="Main screenshot for project work." />
+        <motion.h2 layoutId={`name ${project.id}`}>{project.name}</motion.h2>
+        <motion.img
+          layoutId={`image ${project.id}`}
+          src={project.bgImage}
+          alt="Main screenshot for project work."
+        />
       </Link>
     </StyledProject>
   );
