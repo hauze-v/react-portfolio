@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 const Project = ({ project, setProjectDetail }) => {
   const loadDetailHandler = () => {
+    // Stop the scrolling behind the card shadow
+    document.body.style.overflow = "hidden";
     setProjectDetail(project);
   };
 

@@ -1,10 +1,27 @@
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+// Routing
+import { useHistory } from "react-router-dom";
 
 const ProjectDetail = ({ projectDetail }) => {
+  // Grab history
+  const history = useHistory();
+
+  // Exit Detail Handler (closes popup and re-enable scrolling on Home page)
+  const exitDetailHandler = (e) => {
+    // e.target grabs whatever the user clicked on
+    const element = e.target;
+    // If the user clicked on card shadow element...
+    if (element.classList.contains("shadow")) {
+      // Enable scrolling and close the window using history.push (it's kind of like Link)
+      document.body.style.overflow = "auto";
+      history.push("/");
+    }
+  };
+
   return (
-    <CardShadow>
+    <CardShadow className="shadow" onClick={exitDetailHandler}>
       <ProjectDetails>
         <Header>
           <h3>{projectDetail.name}</h3>
