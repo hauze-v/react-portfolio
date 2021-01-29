@@ -1,6 +1,8 @@
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+// Routing
+import { Link } from "react-router-dom";
 
 const Project = ({ project, setProjectDetail }) => {
   const loadDetailHandler = () => {
@@ -9,8 +11,10 @@ const Project = ({ project, setProjectDetail }) => {
 
   return (
     <StyledProject onClick={loadDetailHandler}>
-      <h2>{project.name}</h2>
-      <img src={project.bgImage} alt="Main screenshot for project work." />
+      <Link to={`/project/${project.id}`}>
+        <h2>{project.name}</h2>
+        <img src={project.bgImage} alt="Main screenshot for project work." />
+      </Link>
     </StyledProject>
   );
 };
@@ -20,6 +24,7 @@ const StyledProject = styled(motion.div)`
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 1rem;
+  cursor: pointer;
   img {
     width: 100%;
     display: block;

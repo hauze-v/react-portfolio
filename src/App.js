@@ -1,23 +1,15 @@
-import { useState } from "react";
 // Import styles
 import "./styles/app.scss";
-// Components
-import AboutSection from "./components/AboutSection";
-import MyExpSection from "./components/MyExpSection";
-import MyWorkSection from "./components/MyWorkSection";
-// Import project data
-import data from "./data";
+import Home from "./pages/Home";
+// Router
+import { Route } from "react-router-dom";
 
 function App() {
-  // State
-  const [projects] = useState(data());
-
   return (
     <div className="App">
-      <div className="thin-bar"></div>
-      <AboutSection />
-      <MyExpSection />
-      <MyWorkSection projects={projects} />
+      <Route path={["/project/:id", "/"]}>
+        <Home />
+      </Route>
     </div>
   );
 }

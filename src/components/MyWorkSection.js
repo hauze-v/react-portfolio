@@ -6,10 +6,16 @@ import ProjectDetail from "../components/ProjectDetail";
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const MyWorkSection = ({ projects }) => {
-  // State
-  const [projectDetail, setProjectDetail] = useState("");
+  // Get current location
+  const location = useLocation();
+  // Split the location string at each "/" and access the third element in the array (in this case, our project's ID)
+  const pathID = location.pathname.split("/")[2];
+
+  // State'
+  const [projectDetail, setProjectDetail] = useState({ screenshots: [] });
 
   return (
     <WorkSection>
@@ -17,7 +23,7 @@ const MyWorkSection = ({ projects }) => {
         <h2>My Work</h2>
         <p>Here are some of my recent projects</p>
       </Header>
-      <ProjectDetail projectDetail={projectDetail} />
+      {pathID && <ProjectDetail projectDetail={projectDetail} />}
       <Projects>
         {projects.map((project) => (
           <Project
