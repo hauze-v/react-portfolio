@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation, fadeAnim } from "../animation";
 // Routing
-import { useHistory } from "react-router-dom";
+import { useHistory, Route, Link } from "react-router-dom";
 
 const ProjectDetail = ({ projectDetail, pathID }) => {
   // Grab history
