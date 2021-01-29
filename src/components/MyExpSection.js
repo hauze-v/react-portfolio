@@ -20,8 +20,10 @@ const MyExpSection = () => {
             <li>CSS(3)</li>
             <li>JavaScript</li>
             <li>React.js</li>
-            <li>JS Design Patterns</li>
+            <li>JS Design Patterns (Revealing Module)</li>
             <li>Wordpress</li>
+            <li>Joomla</li>
+            <li>Shopify</li>
           </ul>
         </div>
         <div className="experience-topics">
@@ -33,11 +35,17 @@ const MyExpSection = () => {
           <h3>Back-end</h3>
           <ul>
             <li>Node.js</li>
-            <li>npm</li>
-            <li>express</li>
+            <li>NPM</li>
+            <li>Express</li>
             <li>SQL</li>
-            <li>Rest APIs</li>
-            <li>MySQL DB</li>
+            <li>API Integration</li>
+            <li>Security implementations</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Google Cloud Platform</li>
+            <li>Linux</li>
+            <li>Apache</li>
+            <li>XAMPP</li>
           </ul>
         </div>
         <div className="experience-topics">
@@ -47,9 +55,8 @@ const MyExpSection = () => {
             <li>Vim</li>
             <li>GitHub</li>
             <li>Git & Subversion</li>
-            <li>Command line interface</li>
+            <li>Command Line Interfaces</li>
             <li>VS Code</li>
-            <li>Linux</li>
             <li>SSH</li>
           </ul>
         </div>

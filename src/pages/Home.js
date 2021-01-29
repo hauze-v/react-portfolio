@@ -5,6 +5,7 @@ import MyExpSection from "../components/MyExpSection";
 import MyWorkSection from "../components/MyWorkSection";
 import TeachingSection from "../components/TeachingSection";
 import HireMeSection from "../components/HireMeSection";
+import FooterSection from "../components/FooterSection";
 // Import project data
 import data from "../data";
 // Router
@@ -22,6 +23,7 @@ const Home = () => {
       <MyWorkSection projects={projects} />
       <TeachingSection />
       <HireMeSection />
+      <FooterSection />
     </div>
   );
 };
