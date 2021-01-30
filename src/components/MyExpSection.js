@@ -10,14 +10,16 @@ const MyExpSection = () => {
       <div className="exp-title">
         <h2>My Experience</h2>
       </div>
-      <div className="exp-total">
-        <ExpTopics>
-          <FaLaptop
-            color="rgb(255, 138, 89)"
-            fontSize="4em"
-            className="icons"
-          />
-          <h3>Front-end</h3>
+      <ExpContainer>
+        <ExpTopic>
+          <div className="topic-header">
+            <FaLaptop
+              color="rgb(255, 138, 89)"
+              fontSize="4em"
+              className="icons"
+            />
+            <h3>Front-end</h3>
+          </div>
           <ul>
             <li>HTML(5)</li>
             <li>CSS(3)</li>
@@ -29,14 +31,16 @@ const MyExpSection = () => {
             <li>Joomla</li>
             <li>Shopify</li>
           </ul>
-        </ExpTopics>
-        <ExpTopics>
-          <AiOutlineDatabase
-            color="rgb(255, 138, 89)"
-            fontSize="4em"
-            className="icons"
-          />
-          <h3>Back-end</h3>
+        </ExpTopic>
+        <ExpTopic>
+          <div className="topic-header">
+            <AiOutlineDatabase
+              color="rgb(255, 138, 89)"
+              fontSize="4em"
+              className="icons"
+            />
+            <h3>Back-end</h3>
+          </div>
           <ul>
             <li>Node.js</li>
             <li>NPM</li>
@@ -51,10 +55,16 @@ const MyExpSection = () => {
             <li>Apache</li>
             <li>XAMPP</li>
           </ul>
-        </ExpTopics>
-        <ExpTopics>
-          <FaStar color="rgb(255, 138, 89)" fontSize="4em" className="icons" />
-          <h3>Tools</h3>
+        </ExpTopic>
+        <ExpTopic>
+          <div className="topic-header">
+            <FaStar
+              color="rgb(255, 138, 89)"
+              fontSize="4em"
+              className="icons"
+            />
+            <h3>Tools</h3>
+          </div>
           <ul>
             <li>Vim</li>
             <li>GitHub</li>
@@ -63,8 +73,8 @@ const MyExpSection = () => {
             <li>VS Code</li>
             <li>SSH</li>
           </ul>
-        </ExpTopics>
-      </div>
+        </ExpTopic>
+      </ExpContainer>
     </Experience>
   );
 };
@@ -75,6 +85,10 @@ const Experience = styled(motion.div)`
   h2 {
     color: #fff;
     margin-bottom: 0.7em;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    margin-top: 0;
   }
   h3 {
     color: #fff;
@@ -83,23 +97,30 @@ const Experience = styled(motion.div)`
     color: rgb(255, 138, 89);
     font-size: 4em;
   }
-  .exp-title {
-    text-align: center;
-    margin-bottom: 5rem;
-    font-size: 1.75rem;
-    margin-top: 0;
-  }
-  .exp-total {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 3rem;
-    width: 50%;
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 
-const ExpTopics = styled(motion.div)`
+const ExpContainer = styled(motion.div)`
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 50%;
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    display: initial;
+  }
+`;
+
+const ExpTopic = styled(motion.div)`
   p {
     color: #acaeb2;
     font-family: "Maven pro", sans-serif;
@@ -119,6 +140,22 @@ const ExpTopics = styled(motion.div)`
   }
   .icons {
     margin-bottom: 1.5rem;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    .topic-header {
+      display: flex;
+      align-items: center;
+      /* border: 2px solid red; */
+    }
+    .icons {
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      margin-left: 1rem;
+    }
+    margin-bottom: 3rem;
   }
 `;
 
