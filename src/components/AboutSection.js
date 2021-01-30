@@ -92,6 +92,13 @@ const TypedDetails = styled(motion.div)`
     color: #fff;
     background-color: #c8412b;
   }
+
+  /* Mobile styles */
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 const CTA = styled(motion.div)`
