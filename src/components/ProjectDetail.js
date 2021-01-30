@@ -34,31 +34,37 @@ const ProjectDetail = ({ projectDetail, pathID }) => {
           <motion.h2>{projectDetail.name}</motion.h2>
         </Header>
         <BGImage>
-          <motion.img
-            src={projectDetail.bgImage}
-            alt="Main screen of project"
-          />
+          <a href={projectDetail.webLink}>
+            <motion.img
+              src={projectDetail.bgImage}
+              alt="Main screen of project"
+            />
+          </a>
         </BGImage>
         <CaseStudy>
           <p>{projectDetail.caseStudy}</p>
+          <Buttons>
+            <a
+              className="my-button visit-site-button"
+              href={projectDetail.webLink}
+            >
+              Visit Website
+            </a>
+            <a
+              className="my-button visit-site-button"
+              href={projectDetail.githubLink}
+            >
+              See the code
+            </a>
+          </Buttons>
+          <p>{projectDetail.logic}</p>
         </CaseStudy>
-        <Buttons>
-          <a
-            className="my-button visit-site-button"
-            href={projectDetail.webLink}
-          >
-            Visit Website
-          </a>
-          <a
-            className="my-button visit-site-button"
-            href={projectDetail.githubLink}
-          >
-            See the code
-          </a>
-        </Buttons>
+
         <ScreenshotGallery>
           {projectDetail.screenshots.map((screenshot) => (
-            <img src={screenshot} alt="Screenshot of project"></img>
+            <a href={projectDetail.webLink}>
+              <img src={screenshot} alt="Screenshot of project"></img>
+            </a>
           ))}
         </ScreenshotGallery>
       </ProjectDetails>
@@ -117,6 +123,8 @@ const BGImage = styled(motion.div)`
 `;
 
 const CaseStudy = styled(motion.div)`
+  width: 80%;
+  margin: 0 auto;
   p {
     color: #738182;
     font-family: "Maven pro", sans-serif;

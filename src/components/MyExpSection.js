@@ -20,6 +20,7 @@ const MyExpSection = () => {
             <li>CSS(3)</li>
             <li>JavaScript</li>
             <li>React.js</li>
+            <li>Sass</li>
             <li>Revealing Module Pattern</li>
             <li>Wordpress</li>
             <li>Joomla</li>
