@@ -45,6 +45,11 @@ const MyWorkSection = ({ projects }) => {
 const WorkSection = styled(motion.div)`
   padding: 6em 4em 3em;
   background-color: #fff;
+
+  /* Media Styles */
+  @media (max-width: 400px) {
+    padding: 3rem 2rem 1.5rem;
+  }
 `;
 
 const Header = styled(motion.div)`

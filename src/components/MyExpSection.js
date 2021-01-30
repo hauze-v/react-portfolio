@@ -84,7 +84,6 @@ const Experience = styled(motion.div)`
   padding: 6em 4em 5.6em;
   h2 {
     color: #fff;
-    margin-bottom: 0.7em;
     text-align: center;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -99,8 +98,10 @@ const Experience = styled(motion.div)`
 
   /* Mobile Styles */
   @media (max-width: 400px) {
+    padding: 3rem 2rem 1.5rem;
     h2 {
       font-size: 2rem;
+      margin-bottom: 4rem;
     }
   }
 `;
@@ -146,11 +147,11 @@ const ExpTopic = styled(motion.div)`
     .topic-header {
       display: flex;
       align-items: center;
-      /* border: 2px solid red; */
     }
     .icons {
       margin-bottom: 0.5rem;
       font-size: 3rem;
+      margin-left: 2rem;
     }
     h3 {
       margin-left: 1rem;

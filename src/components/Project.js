@@ -1,6 +1,7 @@
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { popup } from "../animation";
 // Routing
 import { Link } from "react-router-dom";
 
@@ -13,7 +14,12 @@ const Project = ({ project, setProjectDetail }) => {
 
   // Add a layoutId to component for AnimateSharedLayout animations
   return (
-    <StyledProject onClick={loadDetailHandler}>
+    <StyledProject
+      onClick={loadDetailHandler}
+      variants={popup}
+      initial="hidden"
+      animate="show"
+    >
       <Link to={`/project/${project.id}`}>
         <motion.h2 layoutId={`name ${project.id}`}>{project.name}</motion.h2>
         <motion.img

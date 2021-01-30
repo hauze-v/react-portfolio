@@ -1,9 +1,9 @@
 // Stying and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { pageAnimation, fadeAnim } from "../animation";
+import { fadeAnim } from "../animation";
 // Routing
-import { useHistory, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const ProjectDetail = ({ projectDetail, pathID }) => {
   // Grab history
@@ -25,7 +25,7 @@ const ProjectDetail = ({ projectDetail, pathID }) => {
   return (
     <CardShadow className="shadow" onClick={exitDetailHandler}>
       <ProjectDetails
-        variants={pageAnimation}
+        variants={fadeAnim}
         initial="hidden"
         animate="show"
         exit="exit"

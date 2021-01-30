@@ -80,7 +80,7 @@ const TeachingSection = () => {
     enableTooltip: false,
     deterministic: false,
     fontFamily: "Helvetica",
-    fontSizes: [20, 90],
+    fontSizes: [20, 60],
     fontStyle: "normal",
     fontWeight: "normal",
     padding: 5,
@@ -124,7 +124,7 @@ const Teaching = styled(motion.div)`
     color: #848282;
     font-size: 1.4rem;
     font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     line-height: 1.6;
     text-rendering: optimizeLegibility;
   }
@@ -136,28 +136,32 @@ const Teaching = styled(motion.div)`
     opacity: 0.8;
   }
   div {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   .teaching-domains {
     height: 500px;
     width: auto;
     margin-top: -4rem;
   }
+  #wordpress-link {
+    color: rgba(255, 103, 68, 0.91);
+  }
+  #wordpress-link:hover {
+    opacity: 0.8;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    width: 95%;
+    padding: 3rem 2rem 1.5rem;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 `;
 
 export default TeachingSection;
-
-/*
-
-#teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
-}
-#wordpress-link {
-	color: rgba(255, 103, 68, 0.91);
-}
-#wordpress-link:hover {
-	opacity: 0.8;
-}
-*/
