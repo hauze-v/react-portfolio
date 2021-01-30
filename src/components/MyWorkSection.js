@@ -62,6 +62,14 @@ const Header = styled(motion.div)`
     margin-bottom: 4em;
     font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
 `;
 
 const Projects = styled(motion.div)`
@@ -72,6 +80,11 @@ const Projects = styled(motion.div)`
   grid-row-gap: 5rem;
   h2 {
     padding: 2rem 0rem;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    display: initial;
   }
 `;
 

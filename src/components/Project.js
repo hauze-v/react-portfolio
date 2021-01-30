@@ -40,6 +40,16 @@ const StyledProject = styled(motion.div)`
     color: #738182;
   }
   overflow: hidden;
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    margin-bottom: 3rem;
+    min-height: 30vh;
+    width: 100%;
+    h2 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export default Project;

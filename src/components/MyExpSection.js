@@ -63,7 +63,7 @@ const MyExpSection = () => {
               fontSize="4em"
               className="icons"
             />
-            <h3>Tools</h3>
+            <h3 id="tools">Tools</h3>
           </div>
           <ul>
             <li>Vim</li>
@@ -95,7 +95,6 @@ const Experience = styled(motion.div)`
   }
   i {
     color: rgb(255, 138, 89);
-    font-size: 4em;
   }
 
   /* Mobile Styles */
@@ -151,9 +150,13 @@ const ExpTopic = styled(motion.div)`
     }
     .icons {
       margin-bottom: 0.5rem;
+      font-size: 3rem;
     }
     h3 {
       margin-left: 1rem;
+    }
+    #tools {
+      margin-left: 2.5rem;
     }
     margin-bottom: 3rem;
   }
