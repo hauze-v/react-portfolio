@@ -55,7 +55,8 @@ function getProjects() {
       id: uuidv4(),
       name: "Final Fantasy Ipsum Generator",
       caseStudy:
-        "Ever since I first used a custom-built ipsum generator like bacon ipsum back in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an ipsum generator for my favorite video game series, I decided this was the perfect project to practice my JavaScript skills with.",
+        "I built this project way back when I first starting learning HTML, CSS, and JS. Ever since I first used a custom-built Ipsum generator like Bacon Ipsum in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an Ipsum generator for my favorite video game series, I decided this was the perfect project to practice my vanilla JavaScript skills on. When building this project I wanted to have a strong, striking piece of fanart and was honored to find such a talented artist who agreed to let me use their work as the hero image for the page.",
+      logic: `If you're unfamiliar with what Lorem Ipsum is, it's essentially placeholder text that's commonly used to demonstrate the visual form of a document. It was pretty simple to create, although I'm sure there are smarter ways to go about it. I solved it by creating a large object with numerous arrays for different "categories" from this video game series. There are arrays like "characters", "weapons", "spells", etc. Once I had this data, I was able to generate a random word from each array and build a final resulting array of words based on the number of sentences the user inputted. Then I simply print out to the text-area the resulting array of words joined together with a " ". This creates the Ipsum, or placeholder text you see after hitting the button.`,
       bgImage: ipsumMain,
       screenshots: [ipsumSS01, ipsumSS02],
       webLink: "https://finalfantasyipsum.com/",
@@ -66,7 +67,8 @@ function getProjects() {
       id: uuidv4(),
       name: "Vanilla Quiz App",
       caseStudy:
-        "Object oriented vanilla JavaScript quiz app built using the revealing module pattern. This project allowed me to apply my OOP knowledge through constructor functions and object prototypes.",
+        "I built this project while learning object-oriented programming in vanilla JavaScript. It's a simple quiz app that I built using the revealing module design pattern. At the time, I was learning all sorts of JavaScript fundamentals that I demonstrate in this project. Things like function constructors, prototypes, caching the DOM, event listeners, and rendering out the components. Looking back at the code and how I needed to render everything makes me appreciate React even more. Mostly though, the focus for this project was to learn and practice OOP and that's pretty clear given how the components are built and the prototypal inheritance used. ",
+      logic: `The app starts out by caching the DOM elements I'll need and creating the five-question objects. I then pass those five-question objects to my Quiz component, initializing it. Once this is done the Quiz is ready to be played and so once a user clicks the next button there's an event listener in place that checks their guess against an answer key and then re-renders the page, keeping track of their score in the background. For the end screen, I wrote a switch case function that displays a certain message depending on how well they score.`,
       bgImage: quizMain,
       screenshots: [quizSS01, quizSS02],
       webLink: "https://hauze-v.github.io/oop-quiz-app/",
@@ -76,7 +78,8 @@ function getProjects() {
       id: uuidv4(),
       name: "Vanilla Hangman Game",
       caseStudy:
-        "Prompto blizzard magic pot princess guard mega-phoenix dispel light robe Raiden dark knight. Cinna slowga adamantoise lion heart elixir haste ninja gear Cait Sith white mage. Relm slowga adamantoise lion heart sleeping bag blizzara myrthril vest Carbuncle samurai. Garnet thunder judges tiger racket echo screen fira rubber suit Kujata warrior.",
+        "The hangman game is a continuation of implementing object-oriented programming techniques and JavaScript fundamentals I learned in the other vanilla JS projects listed here. This was the most complicated project I had built at the time and I focused on writing clean, organized code that followed the Revealing Module Pattern. Looking back at this code now, having learned React.js, the Revealing Module Pattern looks similar to how a React component is structured. This was also the first time I experimented with sounds and background music which I enjoyed quite a bit. I think it adds a lot to the user experience. Lastly, an API was used to create the lines and overall image of the stick-figure. It took time learning how to leverage the API to get the right length, angle, and properly sized lines needed to create the final result.",
+      logic: `The app starts with the Home module and renders the New Game button and the How to Play button. An event listener waits for the user to click New Game before initializing and rendering the Game module. This is where the background music starts and a word is chosen. Once a letter is clicked there's an event that checks whether or not the letter matches a letter in the chosen word and if not, the event grays out that letter and adds a line to the stick figure. If the letter does exist it's displayed above in the correct spot and the game continues. Lastly, I initialize and render the End module screen once the lives hit zero or the user guesses the word.`,
       bgImage: hangmanMain,
       screenshots: [hangmanSS01, hangmanSS02],
       webLink: "https://hauze-v.github.io/hangman-game/",
