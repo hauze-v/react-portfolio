@@ -5,8 +5,10 @@ import Project from "../components/Project";
 import ProjectDetail from "../components/ProjectDetail";
 // Stying and Animation
 import styled from "styled-components";
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { popup } from "../animation";
 import { useLocation } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const MyWorkSection = ({ projects }) => {
   // Get current location
@@ -14,7 +16,16 @@ const MyWorkSection = ({ projects }) => {
   // Split the location string at each "/" and access the third element in the array (in this case, our project's ID)
   const pathID = location.pathname.split("/")[2];
 
-  // State'
+  /* Setup scrolling animation using useAnimation and framer motion */
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.6, triggerOnce: true });
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
+
+  // State
   const [projectDetail, setProjectDetail] = useState({ screenshots: [] });
 
   /* Wrap the toggled component (ProjectDetail) in AnimatePresence and both components you want to animate in AnimateSharedLayout
@@ -28,7 +39,7 @@ const MyWorkSection = ({ projects }) => {
       {pathID && projectDetail.name && (
         <ProjectDetail projectDetail={projectDetail} />
       )}
-      <Projects>
+      <Projects ref={element} variants={popup} animate={controls}>
         {projects.map((project) => (
           <Project
             project={project}

@@ -1,7 +1,8 @@
 // Stying and Animation
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { popup } from "../animation";
+import { useInView } from "react-intersection-observer";
 // Routing
 import { Link } from "react-router-dom";
 
@@ -12,14 +13,18 @@ const Project = ({ project, setProjectDetail }) => {
     setProjectDetail(project);
   };
 
+  /* Setup scrolling animation using useAnimation and framer motion */
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
+
   // Add a layoutId to component for AnimateSharedLayout animations
   return (
-    <StyledProject
-      onClick={loadDetailHandler}
-      variants={popup}
-      initial="hidden"
-      animate="show"
-    >
+    <StyledProject onClick={loadDetailHandler}>
       <Link to={`/project/${project.id}`}>
         <motion.h2 layoutId={`name ${project.id}`}>{project.name}</motion.h2>
         <motion.img
