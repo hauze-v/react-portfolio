@@ -1,14 +1,17 @@
 import { FaLaptop, FaStar } from "react-icons/fa";
 import { AiOutlineDatabase } from "react-icons/ai";
+// Styles & Motion
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const MyExpSection = () => {
   return (
-    <section id="experience">
+    <Experience>
       <div className="exp-title">
         <h2>My Experience</h2>
       </div>
       <div className="exp-total">
-        <div className="experience-topics">
+        <ExpTopics>
           <FaLaptop
             color="rgb(255, 138, 89)"
             fontSize="4em"
@@ -26,8 +29,8 @@ const MyExpSection = () => {
             <li>Joomla</li>
             <li>Shopify</li>
           </ul>
-        </div>
-        <div className="experience-topics">
+        </ExpTopics>
+        <ExpTopics>
           <AiOutlineDatabase
             color="rgb(255, 138, 89)"
             fontSize="4em"
@@ -48,8 +51,8 @@ const MyExpSection = () => {
             <li>Apache</li>
             <li>XAMPP</li>
           </ul>
-        </div>
-        <div className="experience-topics">
+        </ExpTopics>
+        <ExpTopics>
           <FaStar color="rgb(255, 138, 89)" fontSize="4em" className="icons" />
           <h3>Tools</h3>
           <ul>
@@ -60,10 +63,63 @@ const MyExpSection = () => {
             <li>VS Code</li>
             <li>SSH</li>
           </ul>
-        </div>
+        </ExpTopics>
       </div>
-    </section>
+    </Experience>
   );
 };
+
+const Experience = styled(motion.div)`
+  background-color: #4c6d86;
+  padding: 6em 4em 5.6em;
+  h2 {
+    color: #fff;
+    margin-bottom: 0.7em;
+  }
+  h3 {
+    color: #fff;
+  }
+  i {
+    color: rgb(255, 138, 89);
+    font-size: 4em;
+  }
+  .exp-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+  .exp-total {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 50%;
+  }
+`;
+
+const ExpTopics = styled(motion.div)`
+  p {
+    color: #acaeb2;
+    font-family: "Maven pro", sans-serif;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  ul {
+    line-height: 1.5;
+  }
+  ul li {
+    list-style: none;
+    color: #bbd2ff;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+  }
+  .icons {
+    margin-bottom: 1.5rem;
+  }
+`;
 
 export default MyExpSection;
