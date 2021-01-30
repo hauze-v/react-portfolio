@@ -10,7 +10,7 @@ const HireMeSection = () => {
       <div class="small-12 medium-8 medium-offset-2 columns">
         <p class="text-center">I'm currently available for work.</p>
       </div>
-      <div id="startButtonDiv">
+      <div id="contactMeButton">
         <a class="my-button form-button" href="mailto:hauze_v@protonmail.com">
           Contact me now
         </a>
@@ -37,7 +37,7 @@ const HireMe = styled(motion.div)`
     font-weight: 500;
     font-size: 1.2em;
   }
-  #startButtonDiv {
+  #contactMeButton {
     margin-top: 3rem;
   }
   a {
@@ -50,5 +50,16 @@ const HireMe = styled(motion.div)`
     color: rgba(255, 103, 68, 0.91);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
       0 4px 14px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    padding: 3rem 2rem 1.5rem;
+    h2 {
+      font-size: 2rem;
+    }
+    #contactMeButton {
+      margin-bottom: 1rem;
+    }
   }
 `;

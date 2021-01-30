@@ -44,14 +44,11 @@ const ProjectDetail = ({ projectDetail, pathID }) => {
         <CaseStudy>
           <p>{projectDetail.caseStudy}</p>
           <Buttons>
-            <a
-              className="my-button visit-site-button"
-              href={projectDetail.webLink}
-            >
+            <a className="my-button" href={projectDetail.webLink}>
               Visit Website
             </a>
             <a
-              className="my-button visit-site-button"
+              className="my-button see-code-button"
               href={projectDetail.githubLink}
             >
               See the code
@@ -106,6 +103,16 @@ const ProjectDetails = styled(motion.div)`
     border-radius: 0.5rem;
     margin-bottom: 2rem;
   }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    padding: 1rem 1rem;
+    img {
+      min-height: 30vh;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+  }
 `;
 
 const Header = styled(motion.div)`
@@ -115,6 +122,16 @@ const Header = styled(motion.div)`
     text-transform: uppercase;
     color: #738182;
     letter-spacing: 1px;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    h2 {
+      padding: 1rem 0;
+      font-size: 1.3rem;
+      text-align: center;
+      letter-spacing: 0px;
+    }
   }
 `;
 
@@ -133,6 +150,15 @@ const CaseStudy = styled(motion.div)`
     margin: 2rem 0;
     line-height: 1.5;
   }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    width: 100%;
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  }
 `;
 
 const Buttons = styled(motion.div)`
@@ -144,15 +170,32 @@ const Buttons = styled(motion.div)`
     color: rgba(255, 103, 68, 0.91);
     border: 2px solid rgba(255, 103, 68, 0.91) !important;
     background-color: #e3e3e3;
+    font-size: 1rem;
   }
   a:hover,
   a:focus {
     background-color: rgba(255, 103, 68, 0.91) !important;
     color: #fff;
   }
-  .visit-site-button {
+  .see-code-button {
     margin-left: 1rem;
-    font-size: 1rem;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    margin: 0;
+    a,
+    a:link,
+    a:active {
+      display: block;
+      margin: 0 auto;
+      font-size: 0.8rem;
+      width: 75%;
+      margin-bottom: 1rem;
+    }
+    .see-code-button {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -160,6 +203,13 @@ const ScreenshotGallery = styled(motion.div)`
   img {
     margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    img {
+      margin-bottom: 0.5rem;
+    }
   }
 `;
 

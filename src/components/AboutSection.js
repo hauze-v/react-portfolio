@@ -72,6 +72,13 @@ const About = styled(motion.div)`
   .img-circle {
     border-radius: 50%;
   }
+
+  /* Mobile Styles */
+  @media (max-width: 400px) {
+    img {
+      width: 13rem;
+    }
+  }
 `;
 
 const TypedDetails = styled(motion.div)`
