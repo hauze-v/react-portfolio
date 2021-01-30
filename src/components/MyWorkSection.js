@@ -25,7 +25,9 @@ const MyWorkSection = ({ projects }) => {
         <h2>My Work</h2>
         <p>Here are some of my recent projects</p>
       </Header>
-      {pathID && <ProjectDetail projectDetail={projectDetail} />}
+      {pathID && projectDetail.name && (
+        <ProjectDetail projectDetail={projectDetail} />
+      )}
       <Projects>
         {projects.map((project) => (
           <Project
