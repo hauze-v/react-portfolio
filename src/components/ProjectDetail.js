@@ -105,7 +105,7 @@ const ProjectDetails = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     padding: 1rem 1rem;
     img {
       min-height: 30vh;
@@ -125,7 +125,7 @@ const Header = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     h2 {
       padding: 1rem 0;
       font-size: 1.3rem;
@@ -152,7 +152,7 @@ const CaseStudy = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     width: 100%;
     p {
       font-size: 1rem;
@@ -182,7 +182,7 @@ const Buttons = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     margin: 0;
     a,
     a:link,
@@ -206,7 +206,7 @@ const ScreenshotGallery = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     img {
       margin-bottom: 0.5rem;
     }

@@ -53,7 +53,7 @@ const HireMe = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     padding: 3rem 2rem 1.5rem;
     h2 {
       font-size: 2rem;

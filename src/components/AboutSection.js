@@ -74,7 +74,7 @@ const About = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     img {
       width: 13rem;
     }
@@ -101,7 +101,7 @@ const TypedDetails = styled(motion.div)`
   }
 
   /* Mobile styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     h2 {
       font-size: 2rem;
     }

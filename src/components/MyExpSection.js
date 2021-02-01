@@ -97,7 +97,7 @@ const Experience = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     padding: 3rem 2rem 1.5rem;
     h2 {
       font-size: 2rem;
@@ -115,7 +115,7 @@ const ExpContainer = styled(motion.div)`
   width: 50%;
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     display: initial;
   }
 `;
@@ -143,7 +143,7 @@ const ExpTopic = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     .topic-header {
       display: flex;
       align-items: center;

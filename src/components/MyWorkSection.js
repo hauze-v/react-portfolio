@@ -58,7 +58,7 @@ const WorkSection = styled(motion.div)`
   background-color: #fff;
 
   /* Media Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     padding: 3rem 2rem 1.5rem;
   }
 `;
@@ -80,7 +80,7 @@ const Header = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     p {
       font-size: 1rem;
       margin-bottom: 2rem;
@@ -99,7 +99,7 @@ const Projects = styled(motion.div)`
   }
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     display: initial;
   }
 `;

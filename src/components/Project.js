@@ -42,7 +42,7 @@ const StyledProject = styled(motion.div)`
   overflow: hidden;
 
   /* Mobile Styles */
-  @media (max-width: 400px) {
+  @media (max-width: 415px) {
     margin-bottom: 3rem;
     min-height: 30vh;
     width: 100%;
