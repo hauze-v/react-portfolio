@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeAnim } from "../animation";
+import { AiFillCloud } from "react-icons/ai";
 // Routing
 import { useHistory } from "react-router-dom";
 
@@ -32,6 +33,9 @@ const ProjectDetail = ({ projectDetail, pathID }) => {
       >
         <Header>
           <motion.h2>{projectDetail.name}</motion.h2>
+          <div className="hosting">
+            <motion.p>Hosted on: {projectDetail.hosting}</motion.p>
+          </div>
         </Header>
         <BGImage>
           <a href={projectDetail.webLink}>
@@ -123,6 +127,17 @@ const Header = styled(motion.div)`
     color: #738182;
     letter-spacing: 1px;
   }
+  .hosting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    padding: 1rem;
+    color: rgba(255, 103, 68, 0.91);
+    font-family: "Maven pro", sans-serif;
+    font-size: 1.2rem;
+  }
 
   /* Mobile Styles */
   @media (max-width: 415px) {
@@ -131,6 +146,9 @@ const Header = styled(motion.div)`
       font-size: 1.3rem;
       text-align: center;
       letter-spacing: 0px;
+    }
+    p {
+      font-size: 1rem;
     }
   }
 `;
