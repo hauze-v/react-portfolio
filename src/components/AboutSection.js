@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 // Images
-import portrait from "../img/Adam.jpg";
+import portrait from "../img/Adam2.png";
 // Typist
 import Typist from "react-typist";
 
