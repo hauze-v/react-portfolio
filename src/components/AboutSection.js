@@ -46,11 +46,11 @@ const AboutSection = () => {
           <a href="https://github.com/hauze-v">
             <i className="fa fa-github-alt fa-2x"></i>
           </a>
-          <a href="https://hyperstylescript.com">
+          {/* <a href="https://hyperstylescript.com">
             <i className="fa fa-desktop fa-2x"></i>
-          </a>
-          <a href="https://twitter.com/hyper_style_scp">
-            <i className="fa fa-twitter fa-2x"></i>
+          </a> */}
+          <a href="https://www.linkedin.com/in/adam-hauze-bbbb7083/">
+            <i className="fa fa-linkedin fa-2x"></i>
           </a>
         </div>
       </Social>

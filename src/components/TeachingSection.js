@@ -95,12 +95,9 @@ const TeachingSection = () => {
       <h2 class="text-center">Teaching</h2>
       <div>
         <p>
-          In July 2020, I built a{" "}
-          <a href="https://hyperstylescript.com" id="wordpress-link">
-            blog
-          </a>{" "}
-          where I've been learning and sharing in public every Friday. Since
-          then, I've helped over 50 subscribers with topics on...
+          In 2020 I ran a blog for about 10 months
+          where I learned and shared in public every Friday. Durring that time,
+          I helped over 50 subscribers with topics on...
         </p>
       </div>
       <ReactWordcloud words={words} options={options} />

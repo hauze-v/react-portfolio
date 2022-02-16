@@ -28,7 +28,6 @@ const MyExpSection = () => {
             <li>Sass</li>
             <li>Revealing Module Pattern</li>
             <li>Wordpress</li>
-            <li>Joomla</li>
             <li>Shopify</li>
           </ul>
         </ExpTopic>
@@ -44,12 +43,12 @@ const MyExpSection = () => {
           <ul>
             <li>Node.js</li>
             <li>NPM</li>
+            <li>Yarn</li>
             <li>Express</li>
             <li>SQL</li>
             <li>API Integration</li>
             <li>Security Headers</li>
             <li>Docker</li>
-            <li>Kubernetes</li>
             <li>Google Cloud Platform</li>
             <li>Linux</li>
             <li>Apache</li>
