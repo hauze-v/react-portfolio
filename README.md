@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# How to launch this app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Delete the `package-lock.json` and `node_modules` folder after cloning the repo
+
+## Run `npm install` 
 
 ## Available Scripts
 
