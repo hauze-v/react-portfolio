@@ -1,4 +1,20 @@
-# How to launch this app
+## Get it Goin - Updated Feb/22
+021520222
+
+Install NVM:
+`nvm install 14.15`
+`nvm use 14.15`
+
+Install Yarn:
+http://yarnpkg.com/
+
+Fetch Dependencies
+`yarn install`
+Start App (localhost:3000)
+`yarn start`
+
+In general, replace `npm` with `yarn`
+## How to launch this app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
