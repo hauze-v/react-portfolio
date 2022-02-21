@@ -51,7 +51,7 @@ function getProjects() {
       bgImage: captureMain,
       hosting: `Github Pages`,
       screenshots: [captureSS01, captureSS02],
-      webLink: "http://34.70.229.27/react-capture-portfolio",
+      webLink: "http://hauze-v.github.io/react-capture-portfolio",
       githubLink: "https://github.com/hauze-v/react-capture-portfolio",
     },
     {
