@@ -29,7 +29,7 @@ function getProjects() {
       bgImage: musicMain,
       hosting: `Github Pages`,
       screenshots: [musicSS01, musicSS02],
-      webLink: "http://35.222.64.101/",
+      webLink: "https://hauze-v.github.io/react-music-player/",
       githubLink: "https://github.com/hauze-v/react-music-player",
     },
     {
@@ -40,7 +40,7 @@ function getProjects() {
       bgImage: igniteMain,
       hosting: `Github Pages`,
       screenshots: [igniteSS01, igniteSS02],
-      webLink: "http://35.239.133.109",
+      webLink: "https://hauze-v.github.io/react-gaming-site/",
       githubLink: "https://github.com/hauze-v/ignite",
     },
     {
