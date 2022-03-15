@@ -7,7 +7,7 @@ const FooterSection = () => {
     <Footer>
       <div class="row text-center">
         <div class="small-12 medium-6 medium-offset-3 columns">
-          <a href="https://hyperstylescript.com">
+          <a href="https://www.linkedin.com/in/adam-hauze-bbbb7083/">
             <p id="logo">AH</p>
           </a>
 
