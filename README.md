@@ -1,4 +1,5 @@
 ## Get it Goin - Updated Feb/22
+
 021520222
 
 Install NVM:
@@ -14,13 +15,14 @@ Start App (localhost:3000)
 `yarn start`
 
 In general, replace `npm` with `yarn`
+
 ## How to launch this app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Delete the `package-lock.json` and `node_modules` folder after cloning the repo
 
-## Run `npm install` 
+## Run `npm install`
 
 ## Available Scripts
 

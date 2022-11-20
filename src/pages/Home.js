@@ -8,8 +8,6 @@ import HireMeSection from "../components/HireMeSection";
 import FooterSection from "../components/FooterSection";
 // Import project data
 import data from "../data";
-// Router
-import { Route } from "react-router-dom";
 
 const Home = () => {
   // State

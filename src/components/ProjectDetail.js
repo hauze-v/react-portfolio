@@ -2,7 +2,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeAnim } from "../animation";
-import { AiFillCloud } from "react-icons/ai";
 // Routing
 import { useHistory } from "react-router-dom";
 
