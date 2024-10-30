@@ -21,14 +21,13 @@ const MyExpSection = () => {
             <h3>Front-end</h3>
           </div>
           <ul>
+            <li>Angular (Expert)</li>
+            <li>React.js (Advanced)</li>
+            <li>Typescript</li>
             <li>HTML(5)</li>
             <li>CSS(3)</li>
             <li>JavaScript</li>
-            <li>React.js</li>
             <li>Sass</li>
-            <li>Revealing Module Pattern</li>
-            <li>Wordpress</li>
-            <li>Shopify</li>
           </ul>
         </ExpTopic>
         <ExpTopic>
@@ -41,18 +40,12 @@ const MyExpSection = () => {
             <h3>Back-end</h3>
           </div>
           <ul>
+            <li>Google Cloud Platform</li>
+            <li>Firebase</li>
             <li>Node.js</li>
-            <li>NPM</li>
-            <li>Yarn</li>
             <li>Express</li>
             <li>SQL</li>
             <li>API Integration</li>
-            <li>Security Headers</li>
-            <li>Docker</li>
-            <li>Google Cloud Platform</li>
-            <li>Linux</li>
-            <li>Apache</li>
-            <li>XAMPP</li>
           </ul>
         </ExpTopic>
         <ExpTopic>
@@ -65,12 +58,13 @@ const MyExpSection = () => {
             <h3 id="tools">Tools</h3>
           </div>
           <ul>
-            <li>Vim</li>
             <li>GitHub</li>
-            <li>Git & Subversion</li>
-            <li>Command Line Interfaces</li>
-            <li>VS Code</li>
+            <li>Figma</li>
+            <li>Claude AI</li>
+            <li>Jira</li>
+            <li>Git</li>
             <li>SSH</li>
+            <li>Ghost Inspector</li>
           </ul>
         </ExpTopic>
       </ExpContainer>

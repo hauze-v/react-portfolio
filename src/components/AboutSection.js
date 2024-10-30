@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 import { motion } from "framer-motion";
 // Images
@@ -22,12 +23,12 @@ const AboutSection = () => {
               className={`writing-text`}
               onTypingDone={highlight}
             >
-              <span>am a front end web developer.</span>
-              <Typist.Backspace count={29} delay={500} />
+              <span>specialize in frontend frameworks.</span>
+              <Typist.Backspace count={34} delay={500} />
               <span>love learning new things.</span>
               <Typist.Backspace count={25} delay={500} />
-              <span>share knowledge each week on my blog.</span>
-              <Typist.Backspace count={37} delay={500} />
+              <span>build cool apps in my spare time.</span>
+              <Typist.Backspace count={33} delay={500} />
               <span id="last-line">am passionate about code.</span>
             </Typist>
           </h2>
@@ -46,9 +47,6 @@ const AboutSection = () => {
           <a href="https://github.com/hauze-v">
             <i className="fa fa-github-alt fa-2x"></i>
           </a>
-          {/* <a href="https://hyperstylescript.com">
-            <i className="fa fa-desktop fa-2x"></i>
-          </a> */}
           <a href="https://www.linkedin.com/in/adam-hauze-bbbb7083/">
             <i className="fa fa-linkedin fa-2x"></i>
           </a>

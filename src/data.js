@@ -18,9 +18,25 @@ import hangmanSS02 from "./img/hangman-ss02 (2).png";
 import captureMain from "./img/capture-main.png";
 import captureSS01 from "./img/capture-ss01.png";
 import captureSS02 from "./img/capture-ss02.jpg";
+import clipzMain from "./img/clipz-main.png";
+import clipzSS01 from "./img/clipz-ss1.png";
+import clipzSS02 from "./img/clipz-ss2.png";
+import clipzSS03 from "./img/clipz-ss3.png";
+import clipzSS04 from "./img/clipz-ss4.png";
 
 function getProjects() {
   return [
+    {
+      id: uuidv4(),
+      name: 'Angular Video Sharing Application',
+      caseStudy: `This full-stack project represents my most ambitious and technically complex application to date, combining Angular's robust frontend framework with Firebase backend services and WebAssembly for optimized video processing. The project served as a deep dive into TypeScript and Angular's ecosystem, pushing me to master concepts like RxJS observables, reactive forms, and component design patterns. One of the most exciting aspects was implementing WebAssembly with Rust for efficient video upload processing – a feature that significantly improved the application's performance compared to traditional JavaScript implementations. The integration of TailwindCSS for styling proved to be an excellent choice, allowing for rapid UI development while maintaining a consistent design system throughout the application. This project also marked my first experience with building a comprehensive authentication system using Firebase, complete with token management and security rules to protect user data and prevent malicious file uploads.`,
+      logic: `The application's architecture is built on several key technical implementations. At its core, the app uses Angular's dependency injection system to maintain singleton services that handle state management and Firebase interactions. I implemented reactive forms with custom validators to ensure data integrity before it reaches the backend, while RxJS observables manage complex data streams and help prevent memory leaks through proper subscription management. The video upload system presented a unique challenge that I solved by creating a WebAssembly module in Rust, which handles video processing on the client side before upload. This approach significantly reduced server load and improved upload speeds. Firebase security rules enforce file validation and user authentication, creating a secure environment for video sharing. The application's routing system implements lazy loading for better initial load times, and I utilized Angular's content projection system to create reusable component templates. To handle multiple data streams efficiently, I leveraged RxJS operators like combineLatest and switchMap, particularly when dealing with user authentication states and video data simultaneously. The project follows Angular's best practices for component communication, utilizing both input/output bindings and services for state management depending on the specific use case.`,
+      bgImage: clipzMain,
+      hosting: 'Vercel',
+      screenshots: [clipzSS01, clipzSS02, clipzSS03, clipzSS04],
+      webLink: 'https://clips-three-alpha.vercel.app/',
+      githubLink: 'https://github.com/hauze-v/clips'
+    },
     {
       id: uuidv4(),
       name: "React Music Player",
@@ -54,19 +70,18 @@ function getProjects() {
       webLink: "https://hauze-v.github.io/react-capture-portfolio",
       githubLink: "https://github.com/hauze-v/react-capture-portfolio",
     },
-    {
-      id: uuidv4(),
-      name: "Final Fantasy Ipsum Generator",
-      caseStudy:
-        "I built this project way back when I first starting learning HTML, CSS, and JS. Ever since I first used a custom-built Ipsum generator like Bacon Ipsum in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an Ipsum generator for my favorite video game series, I decided this was the perfect project to practice my vanilla JavaScript skills on. When building this project I wanted to have a strong, striking piece of fanart and was honored to find such a talented artist who agreed to let me use their work as the hero image for the page.",
-      logic: `If you're unfamiliar with what Lorem Ipsum is, it's essentially placeholder text that's commonly used to demonstrate the visual form of a document. It was pretty simple to create, although I'm sure there are smarter ways to go about it. I solved it by creating a large object with numerous arrays for different "categories" from this video game series. There are arrays like "characters", "weapons", "spells", etc. Once I had this data, I was able to generate a random word from each array and build a final resulting array of words based on the number of sentences the user inputted. Then I simply print out to the text-area the resulting array of words joined together with a " ". This creates the Ipsum, or placeholder text you see after hitting the button.`,
-      bgImage: ipsumMain,
-      hosting: `Bluehost (statically) with shared hosting and FTP`,
-      screenshots: [ipsumSS01, ipsumSS02],
-      webLink: "https://finalfantasyipsum.com/",
-      githubLink: "https://github.com/hauze-v/final-fantasy-ipsum",
-    },
-
+    // {
+    //   id: uuidv4(),
+    //   name: "Final Fantasy Ipsum Generator",
+    //   caseStudy:
+    //     "I built this project way back when I first starting learning HTML, CSS, and JS. Ever since I first used a custom-built Ipsum generator like Bacon Ipsum in college, I've always wanted to make one of my own. Since I'm a big nerd and couldn't find an Ipsum generator for my favorite video game series, I decided this was the perfect project to practice my vanilla JavaScript skills on. When building this project I wanted to have a strong, striking piece of fanart and was honored to find such a talented artist who agreed to let me use their work as the hero image for the page.",
+    //   logic: `If you're unfamiliar with what Lorem Ipsum is, it's essentially placeholder text that's commonly used to demonstrate the visual form of a document. It was pretty simple to create, although I'm sure there are smarter ways to go about it. I solved it by creating a large object with numerous arrays for different "categories" from this video game series. There are arrays like "characters", "weapons", "spells", etc. Once I had this data, I was able to generate a random word from each array and build a final resulting array of words based on the number of sentences the user inputted. Then I simply print out to the text-area the resulting array of words joined together with a " ". This creates the Ipsum, or placeholder text you see after hitting the button.`,
+    //   bgImage: ipsumMain,
+    //   hosting: `Bluehost (statically) with shared hosting and FTP`,
+    //   screenshots: [ipsumSS01, ipsumSS02],
+    //   webLink: "https://finalfantasyipsum.com/",
+    //   githubLink: "https://github.com/hauze-v/final-fantasy-ipsum",
+    // },
     {
       id: uuidv4(),
       name: "Vanilla Quiz App",

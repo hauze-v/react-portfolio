@@ -11,7 +11,7 @@ const FooterSection = () => {
             <p id="logo">AH</p>
           </a>
 
-          <p id="copyright">Copyright &copy; 2020 | Adam Hauze</p>
+          <p id="copyright">Copyright &copy; 2024 | Adam Hauze</p>
         </div>
       </div>
     </Footer>

@@ -95,8 +95,8 @@ const TeachingSection = () => {
       <h2 class="text-center">Teaching</h2>
       <div>
         <p>
-          In 2020 I ran a blog for about 10 months
-          where I learned and shared in public every Friday. Durring that time,
+          In 2020 I ran a blog for a year
+          where I learned and shared in public every Friday. During that time,
           I helped over 50 subscribers with topics on...
         </p>
       </div>
